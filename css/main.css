@@ -97,7 +97,8 @@ textarea {
 
 
 html {
-  background-color: #000000;
+  background: url(../img/snow-mountain.jpg) no-repeat;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
@@ -109,25 +110,41 @@ body {
   height: 100%;
 }
 
+h1 {
+  font-family:'Homemade Apple', cursive;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5em;
+}
+
+h2 span{
+font-family: 'Staatliches', cursive;
+}
+
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  align-items: center;
+  align-items: stretch;
   display: flex;
   flex-flow: row wrap;
-  font-weight: 700;
   justify-content: space-between;
+  max-width: 1200px;
+}
+
+p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: .8em;
 }
 
 .div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   align-items: center;
-  color: #fff;
+  color: #000000;
   display: flex;
   text-align: justify;
   line-height: 1.5em;
   font-size: 1em;
   justify-content: center;
-  height: auto;
   width: 30%;
 }
 
@@ -136,7 +153,17 @@ body {
   padding-right: 30px;
 }
 
+.resize{
+  height: 55px;
+  padding: 0px 35px 20px 0px;
+  width: auto;
+}
 
+
+ul li{
+    display: inline-block;
+    text-align: left;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
